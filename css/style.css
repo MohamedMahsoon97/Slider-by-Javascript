@@ -1,0 +1,110 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ----------------------------- Start section ----------------------------- */
+.container
+{
+    width: 100%;
+    inset: 0;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-flow: column wrap;
+}
+.container .slide-gallery
+{
+    width: 80%;
+    height: 500px;
+    position: relative;
+}
+.container .slide-gallery .slide-number
+{
+    position: absolute;
+    padding: 4px 8px;
+    background-color: #eee;
+    color: #00a37a;
+    z-index: 1;
+}
+.container .slide-gallery img
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    opacity: 0;
+}
+.active
+{
+    background-color: #00a37a;
+    color: #fff;
+    opacity: 1 !important;
+}
+.disabled
+{
+    background-color: #00a37a8c !important;
+    cursor: no-drop !important;
+}
+.container .slide-controls
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.container .slide-controls > span
+{
+    margin: 50px 80px;
+}
+.container .slide-controls .prev
+{
+    background-color: #00a37a;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    cursor: pointer;
+}
+.container .slide-controls .indicators
+{
+    
+}
+.container .slide-controls .indicators ul
+{
+    
+}
+.container .slide-controls .indicators ul li
+{
+    display: inline-block;
+    border: 1px solid #eee;
+    padding: 1px 6px;
+    margin: 6px 3px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    cursor: pointer;
+}
+.container .slide-controls .next
+{
+    background-color: #00a37a;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    cursor: pointer;
+}
+
+/* ----------------------------- End section ----------------------------- */
