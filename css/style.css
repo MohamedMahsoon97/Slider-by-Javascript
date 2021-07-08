@@ -11,7 +11,7 @@
 {
     width: 100%;
     inset: 0;
-    margin-top: 70px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,8 +28,9 @@
 {
     position: absolute;
     padding: 4px 8px;
-    background-color: #eee;
-    color: #00a37a;
+    background-color: #fcfcfc;
+    border-radius: 0px 0px 10px 0px;
+    color: #d4c111;
     z-index: 1;
 }
 .container .slide-gallery img
@@ -42,44 +43,50 @@
 }
 .active
 {
-    background-color: #00a37a;
+    background-color: #f1dc18;
     color: #fff;
     opacity: 1 !important;
 }
 .disabled
 {
-    background-color: #00a37a8c !important;
+    background-color: #f1db1886 !important;
     cursor: no-drop !important;
 }
 .container .slide-controls
 {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: px;
 }
 .container .slide-controls > span
 {
-    margin: 50px 80px;
+    margin: 50px 80px 0px;
 }
-.container .slide-controls .prev
+.container .controls .prev
 {
-    background-color: #00a37a;
+    background-color: #f1dc18;
     color: #fff;
-    padding: 6px 10px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
+    padding: 10px 12px;
+    border-radius: 50%;
     cursor: pointer;
+    position: absolute;
+    left: 150px;
+    top: 250px;
 }
-.container .slide-controls .indicators
+.container .controls .next
 {
-    
+    background-color: #f1dc18;
+    color: #fff;
+    padding: 10px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    right: 150px;
+    top: 250px;
 }
-.container .slide-controls .indicators ul
+.container .controls i
 {
-    
+    font-size: 22px;
 }
 .container .slide-controls .indicators ul li
 {
@@ -87,18 +94,6 @@
     border: 1px solid #eee;
     padding: 1px 6px;
     margin: 6px 3px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    cursor: pointer;
-}
-.container .slide-controls .next
-{
-    background-color: #00a37a;
-    color: #fff;
-    padding: 6px 10px;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
